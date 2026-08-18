@@ -1,0 +1,21 @@
+# Project TODO
+
+- [x] Initial football-themed application shell
+- [x] Login/register interface
+- [x] Team management interface
+- [x] Player CRUD interface
+- [x] Opponent CRUD interface
+- [x] Rule-based tactical analysis interface
+- [x] Recommendation and decision history interface
+- [x] Resolve full-stack scaffold merge conflicts while preserving the existing Touchline Ledger UI
+- [x] Define persistent Team, Player, Opponent, TacticalDecision, and Recommendation database tables
+- [x] Add protected backend procedures for dashboard data and CRUD operations
+- [x] Add deterministic server-side tactical recommendation rules
+- [x] Replace localStorage authentication and persistence with Django-backed data flows
+- [x] Connect authentication state to the existing login/register experience
+- [x] Generate and apply database migrations
+- [x] Add Vitest coverage for the managed auth contract; API smoke tests cover tactical persistence
+- [x] Validate authenticated API flows, responsive UI, TypeScript, build, Django checks, and Vitest
+- [x] Remove localStorage-based workspace/auth bootstrap and persist state only through the Django session + SQLite-backed API
+- [x] Wire the auth form fields fully to backend auth: bind password input, use /auth/register for registration, use /auth/login for sign-in, and surface proper auth errors/states
+- [x] Add auth form validation and pending-state UX: validate required email/password and name on register, prevent duplicate submits, and show scoped loading feedback

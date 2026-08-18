@@ -19,3 +19,15 @@
 - [x] Remove localStorage-based workspace/auth bootstrap and persist state only through the Django session + SQLite-backed API
 - [x] Wire the auth form fields fully to backend auth: bind password input, use /auth/register for registration, use /auth/login for sign-in, and surface proper auth errors/states
 - [x] Add auth form validation and pending-state UX: validate required email/password and name on register, prevent duplicate submits, and show scoped loading feedback
+- [x] Replace React/Vite frontend entry with standalone Django template rendering
+- [x] Add server-rendered Django views and routes for login, registration, logout, dashboard, teams, players, opponents, analysis, recommendation, and decision history
+- [x] Add Bootstrap templates, shared navigation, responsive styling, and minimal JavaScript
+- [x] Preserve existing Django models, authentication, SQLite persistence, and deterministic tactical decision rules
+- [x] Configure standalone Django startup and remove the Node proxy/frontend runtime dependency
+- [x] Add Django template-flow tests and validate migrations, authentication, CRUD, and tactical analysis rendering
+- [x] Remove or disable the React/Vite frontend/runtime as the active development entrypoint
+- [x] Update startup scripts and deployment configuration so Django runs directly without the Node proxy
+- [x] Add Django tests for team, player, and opponent CRUD flows plus key template rendering
+- [x] Run and verify the Django-only build and start paths after the runtime switch
+- [x] Expand Django tests to cover edit/delete for Team, Player, and Opponent and render the main template pages
+- [x] Add login/register template rendering tests and document that team deletion is intentionally unsupported; team records are edited, not deleted
